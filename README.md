@@ -43,3 +43,10 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 2. Next/font -> (main)/layout、(store)/layout
 3. Next/image -> (main)/page
 4. Next/link -> (main)/page
+
+### 六、 others
+
+1. error page
+2. loading page
+3. middleware
+4. BE api
