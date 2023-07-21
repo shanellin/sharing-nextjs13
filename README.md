@@ -22,7 +22,7 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 
 ### 二、 Rendering
 
-2. SSR -> cache: "no-store"
+2. SSR -> cache: "no-store", implement streaming ssr
 3. SSG -> cache: "force-cache" or empty
 4. ISR -> next: { revalidate: 10 } (main)/ISR/[postId], check ISR/4 in devtool's network tab.
 5. CSR -> skip duplicate api call (Cache-Status: MISS | HIT)
