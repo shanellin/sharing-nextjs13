@@ -11,3 +11,35 @@ pnpm dev
 ```
 
 Open [http://localhost:6060](http://localhost:6060) with your browser to see the result.
+
+## Feature
+
+### ㄧ、 Router system
+
+1. Route group -> (main)、(store)
+2. Layout -> (main)/layout、(store)/layout
+3. Dyamic route -> (main)/ISR/[postId]
+
+### 二、 Rendering
+
+2. SSR -> cache: "no-store"
+3. SSG -> cache: "force-cache" or empty
+4. ISR -> next: { revalidate: 10 } (main)/ISR/[postId], check ISR/4 in devtool's network tab.
+5. CSR -> skip duplicate api call (Cache-Status: MISS | HIT)
+
+### 三、 Component
+
+1. Client component -> components/csr
+2. Server component -> components/ssr
+
+### 四、 styles
+
+1. Css
+2. Styled-component (> v6.0.0) -> styles/registry、(store)/layout
+
+### 五、 utils
+
+1. Metadata -> (main)/layout、(store)/layout
+2. Next/font -> (main)/layout、(store)/layout
+3. Next/image -> (main)/page
+4. Next/link -> (main)/page
