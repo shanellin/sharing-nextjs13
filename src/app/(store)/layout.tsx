@@ -1,6 +1,6 @@
 // Components
-import ShopHeader from "@components/ssr/shopHeader";
-import ShopFooter from "@components/ssr/shopFooter";
+import ShopHeader from "@components/server/shopHeader";
+import ShopFooter from "@components/server/shopFooter";
 // Libs
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";

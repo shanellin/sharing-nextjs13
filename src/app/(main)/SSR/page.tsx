@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 // Components
-import FastComponent from "@components/ssr/fastComponent";
-import SlowComponent from "@components/ssr/slowComponent";
-import ClientComponent from "@components/csr/clientComponent";
+import FastComponent from "@components/server/fastComponent";
+import SlowComponent from "@components/server/slowComponent";
+import ClientComponent from "@components/client/clientComponent";
 // Libs
 import type { Metadata } from "next";
 // Styles

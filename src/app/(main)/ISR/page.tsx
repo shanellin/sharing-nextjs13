@@ -1,5 +1,5 @@
 // Components
-import PostLink from "@components/csr/postLink";
+import PostLink from "@components/client/postLink";
 // Libs
 import type { Metadata } from "next";
 // Styles

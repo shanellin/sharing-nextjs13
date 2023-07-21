@@ -1,6 +1,6 @@
 // Components
-import Header from "@components/ssr/header";
-import Footer from "@components/ssr/footer";
+import Header from "@components/server/header";
+import Footer from "@components/server/footer";
 // Libs
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
