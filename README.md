@@ -29,8 +29,8 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 
 ### 三、 Component
 
-1. Client component -> components/csr
-2. Server component -> components/ssr
+1. Client component -> components/client
+2. Server component -> components/server
 
 ### 四、 styles
 
