@@ -20,6 +20,7 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 2. Layout -> (main)/layout、(store)/layout
 3. Dyamic route -> (main)/ISR/[postId]
 4. Loading -> (main)/loading
+4. Error -> (main)/error
 
 ### 二、 Rendering
 
