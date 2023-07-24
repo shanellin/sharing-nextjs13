@@ -19,6 +19,7 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 1. Route group -> (main)、(store)
 2. Layout -> (main)/layout、(store)/layout
 3. Dyamic route -> (main)/ISR/[postId]
+4. Loading -> (main)/loading
 
 ### 二、 Rendering
 
