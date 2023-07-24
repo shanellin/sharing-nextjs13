@@ -1,6 +1,6 @@
 // Components
 import ErrorBoundary from "@components/client/errorBoundary";
-import ErrorHandling from "../../error";
+import ErrorHandling from "../error";
 // Libs
 import { Metadata, ResolvingMetadata } from "next";
 // Styles
