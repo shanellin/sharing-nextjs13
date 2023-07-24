@@ -16,11 +16,12 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 
 ### ㄧ、 Router system
 
-1. Route group -> (main)、(store)
-2. Layout -> (main)/layout、(store)/layout
-3. Dyamic route -> (main)/ISR/[postId]
+1. App/page
+2. Route group -> (main)、(store)
+3. Layout -> (main)/layout、(store)/layout
 4. Loading -> (main)/loading
-4. Error -> (main)/error
+5. Error -> (main)/error
+4. Dyamic route -> (main)/ISR/[postId]
 
 ### 二、 Rendering
 
@@ -48,7 +49,5 @@ Open [http://localhost:6060](http://localhost:6060) with your browser to see the
 
 ### 六、 others
 
-1. error page
-2. loading page
-3. middleware
-4. BE api
+1. middleware
+2. BE api
