@@ -1,4 +1,6 @@
 // Components
+import ErrorBoundary from "@components/client/errorBoundary";
+import ErrorHandling from "../../error";
 // Libs
 import { Metadata, ResolvingMetadata } from "next";
 // Styles
@@ -21,6 +23,9 @@ async function getData({ postId }: IgetDataRequest) {
       next: { revalidate: 10 },
     }
   );
+  if (res.status === 404) {
+    throw new Error("404 Not Found");
+  }
   const data: IgetDataResponse = await res.json();
   return data;
 }
@@ -43,11 +48,13 @@ export default async function PostIdPage({ params }: { params: IParams }) {
 
   return (
     <main style={{ padding: "6rem", minHeight: "100vh" }}>
-      <h1 style={{ marginBottom: "10px" }}>POST PAGE - {params.postId}</h1>
-      <article style={{ padding: "10px", border: "1px solid black" }}>
-        <p style={{ marginBottom: "10px" }}>{data.title}</p>
-        <p>{data.body}</p>
-      </article>
+      <ErrorBoundary fallback={<ErrorHandling />}>
+        <h1 style={{ marginBottom: "10px" }}>POST PAGE - {params.postId}</h1>
+        <article style={{ padding: "10px", border: "1px solid black" }}>
+          <p style={{ marginBottom: "10px" }}>{data.title}</p>
+          <p>{data.body}</p>
+        </article>
+      </ErrorBoundary>
     </main>
   );
 }
