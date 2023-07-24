@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import FastComponent from "@components/server/fastComponent";
 import SlowComponent from "@components/server/slowComponent";
 import ClientComponent from "@components/client/clientComponent";
+import Loading from "../loading";
 // Libs
 import type { Metadata } from "next";
 // Styles
@@ -18,10 +19,10 @@ export default async function SSRPage() {
     <main className={styles.main2}>
       <h1>SSR PAGE</h1>
 
-      <Suspense fallback={<h2>loading...</h2>}>
+      <Suspense fallback={<Loading />}>
         <FastComponent />
       </Suspense>
-      <Suspense fallback={<h2>loading...</h2>}>
+      <Suspense fallback={<Loading />}>
         <SlowComponent />
       </Suspense>
 
